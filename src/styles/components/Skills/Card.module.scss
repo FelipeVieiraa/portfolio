@@ -1,0 +1,38 @@
+@import '../../variables';
+
+.skillsCardContainer {
+    flex-basis: 300px;
+    flex-grow: 1;
+    height: auto;
+    background: $background-primary;
+    margin: 10px;
+    padding: 45px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 8px;
+
+    > img {
+        margin-bottom: 5px;
+        width: 4rem;
+        height: 4rem;
+    }
+
+    > div {
+        margin-top: 25px;
+        width: 105px;
+        height: 21px;
+        background-size: contain;
+        position: relative;
+
+        > span {
+            height: 100%;
+            background-size: contain;
+            position: absolute;
+        }
+    }
+
+    @media screen and (max-width: 720px) {}
+}

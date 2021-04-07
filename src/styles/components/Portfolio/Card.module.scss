@@ -1,0 +1,45 @@
+@import '../../variables';
+
+.cardContainer {
+    flex-basis: 300px;
+    flex-grow: 1;
+    height: auto;
+    background: $background-primary;
+    margin: 10px;
+    padding: 35px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 8px;
+
+    > p {
+        margin-bottom: 20px;
+    }
+
+    > div {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        > a {
+            padding: 0px 16px;
+            margin: 0px 10px;
+        }
+    }
+
+    @media screen and (max-width: 520px) {
+        > div {
+            flex-direction: column;
+
+            > a:last-child {
+                margin-top: 12px;
+            }
+        }
+
+    }
+}

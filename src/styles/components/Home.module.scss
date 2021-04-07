@@ -1,0 +1,80 @@
+@import '../variables';
+
+.homeContainer {
+    width: 100%;
+    height: 100vh;
+
+    background: $background-secundary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > article {
+        display: flex;
+        align-items: center;
+    }
+
+    article > div {
+        padding: 30px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        > img {
+            width: 17rem;
+            height: 17rem;
+            border-radius: 50%;
+        }
+
+        > span {
+            font-size: 2.4rem;
+        }
+
+        > p {
+            margin-bottom: 30px;
+
+            > strong {
+                font-size: 1.35rem;
+            }    
+        }
+
+    }
+
+    article:last-child {
+        justify-content: center;
+        position: absolute;
+        bottom: 20px;
+        
+        a {
+            padding: 5px 10px;
+            margin: 0px 8px;
+        
+            img {
+              width: 2.4rem;
+              height: 2.4rem;
+            }
+        }
+    }
+
+    @media screen and (max-width: 980px) {
+        article > div:first-child {
+            display: none;
+        }
+
+        article > div {
+            text-align: center;
+
+            span {
+                width: 100%;
+            }
+
+            a {
+                align-self: center;
+            }
+        }
+
+    }
+}
